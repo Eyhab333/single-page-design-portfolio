@@ -348,34 +348,300 @@ ul {
   }
 }
 /*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  body {
+    background: #fff7f0;
+  }
+}
 /*############ for-tablet-landscape-up #############*/
 @media (min-width: 900px) {
-  .hero-grid {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  body {
+    background: #fff7f0;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.125rem 10.25rem 4.125rem 10.3125rem;
+  }
+  header .logo {
+    width: 48px;
+    height: 48px;
+  }
+  header button {
+    width: 176px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff7f0;
+    background: #030303;
+    border-radius: 28px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.75rem;
+  }
+  main .hero-text {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .hero-text h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4.4375rem;
+    text-align: center;
+    color: #030303;
+    margin-bottom: 1.4375rem;
+  }
+  main .hero-text p {
+    width: 730px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #7a746e;
+  }
+  main .hero-grid {
     margin-bottom: 6.25rem;
     display: grid;
-    grid-template-areas: "graphic" "uiapps" "illustration" "photography" "motion";
-    gap: torem(24);
+    grid-template-areas: "graphic uiapps photography" "graphic illustration motion";
+    gap: 1.5rem;
   }
-  .hero-grid .graphic {
+  main .hero-grid .grid-item {
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  main .hero-grid .grid-item p {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  main .hero-grid .graphic {
     grid-area: graphic;
+    width: 343px;
     background: #755cde;
   }
-  .hero-grid .ui-and-apps {
+  main .hero-grid .graphic .icon-graphic {
+    width: 128px;
+    height: 192px;
+  }
+  main .hero-grid .ui-and-apps-dflex {
     grid-area: uiapps;
+    display: flex;
   }
-  .hero-grid .illustration {
+  main .hero-grid .ui-and-apps-dflex .ui {
+    height: 182px;
+    width: 159px;
+    margin-right: 1.5625rem;
+    background: #f6a560;
+  }
+  main .hero-grid .ui-and-apps-dflex .ui .icon-ui {
+    width: 64px;
+    height: 64px;
+  }
+  main .hero-grid .ui-and-apps-dflex .apps {
+    height: 182px;
+    width: 159px;
+    background: #f39e9e;
+  }
+  main .hero-grid .ui-and-apps-dflex .apps .icon-apps {
+    width: 64px;
+    height: 64px;
+  }
+  main .hero-grid .illustration {
     grid-area: illustration;
+    width: 343px;
+    background: #eb7565;
   }
-  .hero-grid .photography {
+  main .hero-grid .illustration .icon-illustration {
+    width: 128px;
+    height: 64px;
+  }
+  main .hero-grid .photography {
     grid-area: photography;
+    width: 343px;
+    height: 182px;
+    background: #61c4b7;
   }
-  .hero-grid .motion {
+  main .hero-grid .photography .icon-photography {
+    width: 160px;
+    height: 64px;
+  }
+  main .hero-grid .motion {
     grid-area: motion;
+    width: 343px;
+    height: 182px;
+    background: #552049;
   }
-  .hero-grid .grid-item {
-    border-radius: 8px;
+  main .hero-grid .motion .icon-motion {
+    width: 128px;
+    height: 64px;
+  }
+  main .amy {
+    margin-bottom: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main .amy .avatar {
+    width: 445px;
+    height: 445px;
+    margin-right: 7.8125rem;
+  }
+  main .amy .text {
+    width: 540px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .amy .text h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+    color: #030303;
+    margin-bottom: 1.5rem;
+  }
+  main .amy .text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #7a746e;
+    margin-bottom: 1.5rem;
+  }
+  main .amy .text button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff7f0;
+    background: #eb7565;
+    border-radius: 28px;
+    height: 44px;
+    width: 176px;
+  }
+  main .my-work {
+    margin-bottom: 6.25rem;
+  }
+  main .my-work h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #030303;
+    margin-bottom: 2rem;
+  }
+  main .my-work .slider {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  main .my-work .slider .one,
+  main .my-work .slider .five {
+    display: none;
+  }
+  main .my-work .slider .img {
+    border-radius: 10px;
+  }
+  main .my-work .slider .img img {
+    border-radius: 10px;
+  }
+  main .my-work .left-right-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .my-work .left-right-arrows .arrow + .arrow {
+    margin-left: 1rem;
+  }
+  main .my-work .left-right-arrows .arrow {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #030303;
+  }
+  main .my-work .left-right-arrows .arrow img {
+    width: 14.81px;
+    height: 16px;
+  }
+  main .contact-container .contact {
+    width: 1110px;
+    background: #030303;
+    border-radius: 10px;
+    padding: 5.0625rem 5.9375rem 5rem 4.0625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .contact-container .contact h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+    color: #fff7f0;
+    margin-bottom: 1.5rem;
+    width: 540px;
+  }
+  main .contact-container .contact p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: #fff7f0;
+    margin-bottom: 0rem;
+    width: 540px;
+  }
+  main .contact-container .contact button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff7f0;
+    height: 56px;
+    width: 228px;
+    background: #eb7565;
+    border-radius: 28px;
+  }
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1111px;
+    margin: 0 auto;
+  }
+  footer .logo {
+    width: 64px;
+    height: 64px;
+  }
+  footer button {
+    width: 228px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff7f0;
+    background: #030303;
+    border-radius: 28px;
   }
 }
 /*############ for-desktop-up ###########*/
