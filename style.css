@@ -1,0 +1,382 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  body {
+    background: #fff7f0;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  header .logo {
+    width: 48px;
+    height: 48px;
+  }
+  header button {
+    width: 176px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff7f0;
+    background: #030303;
+    border-radius: 28px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+  main .hero-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  main .hero-text h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #030303;
+    margin-bottom: torem(16);
+  }
+  main .hero-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7a746e;
+  }
+  main .hero-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 6.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  main .hero-grid .grid-item {
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  main .hero-grid .grid-item p {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  main .hero-grid .graphic {
+    height: 364px;
+    width: 343px;
+    background: #755cde;
+  }
+  main .hero-grid .graphic .icon-graphic {
+    width: 128px;
+    height: 192px;
+  }
+  main .hero-grid .ui-and-apps-dflex {
+    display: flex;
+  }
+  main .hero-grid .ui-and-apps-dflex .ui {
+    height: 182px;
+    width: 159px;
+    margin-right: 1.5625rem;
+    background: #f6a560;
+  }
+  main .hero-grid .ui-and-apps-dflex .ui .icon-ui {
+    width: 64px;
+    height: 64px;
+  }
+  main .hero-grid .ui-and-apps-dflex .apps {
+    height: 182px;
+    width: 159px;
+    background: #f39e9e;
+  }
+  main .hero-grid .ui-and-apps-dflex .apps .icon-apps {
+    width: 64px;
+    height: 64px;
+  }
+  main .hero-grid .illustration {
+    height: 158px;
+    width: 343px;
+    background: #eb7565;
+  }
+  main .hero-grid .illustration .icon-illustration {
+    width: 128px;
+    height: 64px;
+  }
+  main .hero-grid .photography {
+    width: 343px;
+    height: 182px;
+    background: #61c4b7;
+  }
+  main .hero-grid .photography .icon-photography {
+    width: 160px;
+    height: 64px;
+  }
+  main .hero-grid .motion {
+    width: 343px;
+    height: 182px;
+    background: #552049;
+  }
+  main .hero-grid .motion .icon-motion {
+    width: 128px;
+    height: 64px;
+  }
+  main .amy {
+    margin-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .amy .avatar {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2.5rem;
+  }
+  main .amy .text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .amy .text h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+    color: #030303;
+    margin-bottom: 1.5rem;
+  }
+  main .amy .text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7a746e;
+    margin-bottom: 1.5rem;
+  }
+  main .amy .text button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff7f0;
+    background: #eb7565;
+    border-radius: 28px;
+    height: 44px;
+    width: 176px;
+  }
+  main .my-work {
+    margin-bottom: 6.25rem;
+  }
+  main .my-work h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #030303;
+    margin-bottom: 2rem;
+  }
+  main .my-work .slider {
+    margin-bottom: 2rem;
+  }
+  main .my-work .slider .img {
+    border-radius: 10px;
+  }
+  main .my-work .slider .img img {
+    border-radius: 10px;
+  }
+  main .my-work .left-right-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .my-work .left-right-arrows .arrow + .arrow {
+    margin-left: 1rem;
+  }
+  main .my-work .left-right-arrows .arrow {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #030303;
+  }
+  main .my-work .left-right-arrows .arrow img {
+    width: 14.81px;
+    height: 16px;
+  }
+  main .contact-container {
+    padding-left: 0.9375rem;
+    padding-right: 1.0625rem;
+  }
+  main .contact-container .contact {
+    background: #030303;
+    border-radius: 10px;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .contact-container .contact h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+    color: #fff7f0;
+    margin-bottom: 1.5rem;
+  }
+  main .contact-container .contact p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff7f0;
+    margin-bottom: 1.5rem;
+  }
+  main .contact-container .contact button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff7f0;
+    height: 44px;
+    width: 176px;
+    background: #eb7565;
+    border-radius: 28px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1.0625rem 2rem 0.9375rem;
+  }
+  footer .logo {
+    width: 48px;
+    height: 48px;
+  }
+  footer button {
+    width: 176px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff7f0;
+    background: #030303;
+    border-radius: 28px;
+  }
+}
+/*############ for-tablet-portrait-up ##############*/
+/*############ for-tablet-landscape-up #############*/
+@media (min-width: 900px) {
+  .hero-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 6.25rem;
+    display: grid;
+    grid-template-areas: "graphic" "uiapps" "illustration" "photography" "motion";
+    gap: torem(24);
+  }
+  .hero-grid .graphic {
+    grid-area: graphic;
+    background: #755cde;
+  }
+  .hero-grid .ui-and-apps {
+    grid-area: uiapps;
+  }
+  .hero-grid .illustration {
+    grid-area: illustration;
+  }
+  .hero-grid .photography {
+    grid-area: photography;
+  }
+  .hero-grid .motion {
+    grid-area: motion;
+  }
+  .hero-grid .grid-item {
+    border-radius: 8px;
+  }
+}
+/*############ for-desktop-up ###########*/
+/*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */
