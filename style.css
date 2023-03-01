@@ -622,6 +622,9 @@ ul {
     background: #eb7565;
     border-radius: 28px;
   }
+  footer {
+    padding-bottom: 4rem;
+  }
   footer .container {
     display: flex;
     align-items: center;

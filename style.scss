@@ -714,6 +714,7 @@ ul {
   }
 
   footer {
+    padding-bottom: toRem(64);
     .container {
       display: flex;
       align-items: center;
